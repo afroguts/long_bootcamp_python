@@ -18,7 +18,7 @@ def random_value_consumer(a,z):
            
 random_value_consumer( (x , u) for a , z in (random_values) )             
 
-print("Random values")
+
     
 
 print (random_values)
