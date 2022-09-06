@@ -7,14 +7,14 @@
 #2/open the  task 5
 #3/save the result the results to a text file
 
-
-def save_list_into_file(my_list=[]):
+if __name__ == "__main__":
+    def save_list_into_file(my_list=[]):
     
-    a_list=open(r"C:\Users\ismail\Documents\py first shit\long_dev_bootcamp\my_first_saved_list.txt" , "w") 
+        a_list=open(r"C:\Users\ismail\Documents\py first shit\long_dev_bootcamp\my_first_saved_list.txt" , "w") 
 
-    a=a_list.write(str(my_list))
-    a_list.close()
-    print(a)    
+        a=a_list.write(str(my_list))
+        a_list.close()
+        print(a)    
         
 y=[' ', ' ', 'arth', ' ', ' ', ' ', ' ', 'darthtilda']   
 save_list_into_file(y)
