@@ -1,7 +1,7 @@
 import json
 import helper_functions
-path ="C:\\Users\ismail\\Documents\\py first shit\\long_dev_bootcamp\\task_8.py\\selfdev_members.json"
-path2="C:\\Users\ismail\\Documents\\py first shit\\long_dev_bootcamp\\task_8.py\\selfdev_members_enriched.json"
+path ="C:\\Users\\ismail\\Documents\\py\\long_dev_bootcamp\\task_8\\selfdev_members.json"
+path2="C:\\Users\\ismail\\Documents\\py\\long_dev_bootcamp\\task_8\\selfdev_members_enriched.json"
 if __name__ == "__main__":
     members_list= helper_functions.my_file_opener(path)
     for member in members_list: 
