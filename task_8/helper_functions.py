@@ -4,7 +4,6 @@ from fileinput import close
 import json
 def my_file_opener(file_name):
 
-    my_file=open(file_name , encoding='utf-8')
-    file_dictioanary = json.load(my_file)
-    my_file.close()
+    with open(file_name , encoding='utf-8') as my_file:
+        file_dictioanary = json.load(my_file)
     return file_dictioanary
