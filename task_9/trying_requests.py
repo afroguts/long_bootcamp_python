@@ -9,15 +9,16 @@ from bs4 import BeautifulSoup
 import requests 
 url="https://quotes.toscrape.com"
 file_name= "quotes_html_file.txt"
-page = requests.get(url)
-soup = BeautifulSoup(page.text , "lxml")
-with open(file_name , "r+" , encoding="utf-8") as txt_file :
-    txt_file.write(f'{soup.prettify()}\n')
+if __name__ == "__main__":
+    page = requests.get(url)
+    soup = BeautifulSoup(page.text , "lxml")
+    with open(file_name , "r+" , encoding="utf-8") as txt_file :
+        txt_file.write(f'{soup.prettify()}\n')
 
-with open(file_name , "r+" , encoding="utf-8") as txt_file2 :
-    text = txt_file2.read()
-    counting_e = text.count("e")
-    counting_p = text.count("p")
-    print (f"there are {counting_e} e and {counting_p} p in this file")
+    with open(file_name , "r+" , encoding="utf-8") as txt_file2 :
+        text = txt_file2.read()
+        counting_e = text.count("e")
+        counting_p = text.count("p")
+        print (f"there are {counting_e} e and {counting_p} p in this file")
     
 
