@@ -7,6 +7,8 @@
 # Now, it gets tricky. Try to loop through your list of dictionary again and this time, append a new key and value of your choice to each member.
 # After this, save the new and enhanced dictionary into a new file called selfdev_members_enriched.json
 # There are many ways to do that, try to find an easy way.
+#*t means "take all additional positional arguments to this function and pack them into this parameter as a tuple."
+#**d means "take all additional named arguments to this function and insert them into this parameter as dictionary entries."
 import json
 import helper_functions
 import random
