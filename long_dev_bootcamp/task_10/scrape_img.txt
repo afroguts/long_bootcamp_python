@@ -1,0 +1,3 @@
+the site is using lazing loading for images so i can't use the normal way to get links it only gets src="//:0"
+to scrape images links i wanted to use Selenium but i don't know a lot about it in fact i just learned it exist 
+it's a framework that do actions in site like pressing buttons etc ... it will be a task for later for me 
